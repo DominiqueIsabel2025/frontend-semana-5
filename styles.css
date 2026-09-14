@@ -1,0 +1,244 @@
+/* ========================================
+   ESTILOS GENERALES
+   ======================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f6f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+/* ========================================
+   ENCABEZADO
+   ======================================== */
+
+header {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+header h1 {
+    margin: 0 0 10px;
+    font-size: 2.2rem;
+}
+
+header p {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+
+/* ========================================
+   CONTENIDO PRINCIPAL
+   ======================================== */
+
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 35px auto;
+}
+
+
+/* ========================================
+   SECCIONES
+   ======================================== */
+
+section {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+
+    /* Permite que el efecto mouseover
+       tenga una transición suave. */
+    transition: transform 0.3s ease;
+}
+
+section h2 {
+    margin-top: 0;
+    color: #222;
+}
+
+
+/* ========================================
+   BOTONES
+   ======================================== */
+
+button {
+    background-color: #222;
+    color: white;
+    padding: 11px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease,
+                transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #444;
+    transform: translateY(-2px);
+}
+
+
+/* ========================================
+   FORMULARIO
+   ======================================== */
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    flex: 1;
+    min-width: 200px;
+    padding: 11px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+input:focus {
+    outline: 2px solid #555;
+}
+
+
+/* ========================================
+   RESULTADOS
+   ======================================== */
+
+#resultado {
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+
+/* ========================================
+   CONTENIDO DINÁMICO
+   ======================================== */
+
+#contenedor p {
+    background-color: #f1f1f1;
+    padding: 12px;
+    border-radius: 6px;
+}
+
+
+/* ========================================
+   DATOS OBTENIDOS MEDIANTE FETCH
+   ======================================== */
+
+#datos {
+    margin-top: 20px;
+}
+
+#datos p {
+    padding: 12px;
+    margin: 8px 0;
+    background-color: #f1f1f1;
+    border-radius: 6px;
+}
+
+
+/* ========================================
+   PIE DE PÁGINA
+   ======================================== */
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+/* ========================================
+   DISEÑO RESPONSIVE
+   ======================================== */
+
+/* Tablets y pantallas medianas */
+@media (max-width: 768px) {
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    main {
+        width: 94%;
+    }
+
+    section {
+        padding: 22px;
+    }
+
+    form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    form button {
+        width: 100%;
+    }
+}
+
+
+/* Teléfonos */
+@media (max-width: 480px) {
+
+    header {
+        padding: 25px 15px;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    main {
+        width: 95%;
+        margin: 20px auto;
+    }
+
+    section {
+        padding: 18px;
+        margin-bottom: 18px;
+    }
+
+    section h2 {
+        font-size: 1.3rem;
+    }
+
+    button {
+        width: 100%;
+    }
+}

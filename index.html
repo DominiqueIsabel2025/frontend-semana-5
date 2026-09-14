@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mi Proyecto - Semana 5</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Mi Proyecto Web</h1>
+        <p>Semana 5 - JavaScript y DOM</p>
+    </header>
+
+    <main>
+
+        <section id="bienvenida">
+            <h2>Bienvenida</h2>
+            <p id="mensaje">
+                ¡Bienvenido a mi página!
+            </p>
+
+            <button id="btnCambiar">
+                Cambiar mensaje
+            </button>
+        </section>
+
+        <section id="contenido">
+            <h2>Contenido dinámico</h2>
+
+            <div id="contenedor">
+                <!-- JavaScript agregará contenido aquí -->
+            </div>
+
+        </section>
+
+        <section id="formulario-section">
+            <h2>Formulario de contacto</h2>
+
+            <form id="formulario">
+
+                <label for="nombre">Nombre:</label>
+                <input 
+                    type="text" 
+                    id="nombre" 
+                    name="nombre"
+                    placeholder="Escribe tu nombre"
+                >
+
+                <button type="submit">
+                    Enviar
+                </button>
+
+            </form>
+
+            <p id="resultado"></p>
+        </section>
+
+        <section id="datos-section">
+            <h2>Datos externos</h2>
+
+            <button id="btnCargar">
+                Cargar datos
+            </button>
+
+            <div id="datos">
+                <!-- Los datos de la API aparecerán aquí -->
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Proyecto Semana 5 - Frontend 1</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
